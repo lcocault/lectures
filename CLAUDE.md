@@ -10,7 +10,7 @@ Site statique (hébergé chez AlwaysData, sans base de données) de textes fran�
 | `content/<slug>/` | Contenu éditorial : `book.yaml`, `chapitres/*.md`, `notes/*.md` | non (source du build) |
 | `audio/<slug>/` | MP3 par chapitre, `<id-chapitre>.mp3`, que l'utilisateur transfère sur S3 | non |
 | `site/` | Site généré (`tools/build.py`). Seul `site/assets/` s'édite à la main | oui |
-| `tools/` | `build.py`, `deploy.sh`, scripts TTS | non |
+| `tools/` | `build.py`, scripts TTS | non |
 
 `<slug>` = identifiant court en minuscules sans accents (`candide`). `<id-chapitre>` = `01-premier-chapitre`, préfixe numérique pour l'ordre.
 
@@ -18,7 +18,7 @@ Site statique (hébergé chez AlwaysData, sans base de données) de textes fran�
 
 - Environnement : `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`
 - Build : `.venv/bin/python tools/build.py` (n'écrit que dans `site/`)
-- Déploiement : `tools/deploy.sh` (dry-run puis confirmation ; l'utilisateur le lance)
+- Déploiement : AlwaysData récupère `site/` depuis le dépôt GitHub (branche `main`). Après chaque build, committer `site/` avec le reste, puis pousser.
 
 ## Traitement d'un nouveau texte
 
@@ -53,5 +53,4 @@ Les notes contextualisent par rapport au passage ; elles ne recopient pas la sou
 - Notes issues de sources externes : synthèse reformulée, source citée avec sa licence ; privilégier les sources libres (Wikipédia, Wikisource, Gallica pour le domaine public). Contenu éditorial publié sous CC BY-SA 4.0 (cf. `config.yaml`).
 - Pour une note qui reprend des faits peu établis, le dire ; ne pas inventer de références.
 - Le site doit rester lisible sans JavaScript.
-- Pas de secrets dans le dépôt : `.deploy.env` est ignoré.
 - Audio : voix locale gratuite (choix à valider par un essai comparatif sur un extrait) ; vérifier la licence de la voix avant redistribution. Préparer le texte pour la voix (chiffres romains, abréviations, ponctuation).
