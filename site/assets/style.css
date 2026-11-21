@@ -25,3 +25,4 @@ audio{width:100%;margin:.5rem 0 1rem}
 .note-sources{font-size:.85rem;color:var(--muted)}
 dialog#note-dialog{max-width:36rem;width:calc(100% - 2rem);border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
 dialog#note-dialog::backdrop{background:rgba(0,0,0,.4)}
+.signature{text-align:right;font-style:italic;margin-right:2em}

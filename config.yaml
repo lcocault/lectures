@@ -12,4 +12,10 @@ content_license:
 # URL de base du bucket S3 (sans slash final). Les audios y sont attendus à :
 #   <audio_base_url>/<slug>/<id-chapitre>.mp3
 # Laisser vide tant que le bucket n'est pas prêt : aucun lecteur n'est alors affiché.
-audio_base_url: ""
+audio_base_url: "https://always-lectures.s3.eu-west-3.amazonaws.com"
+
+# Crédit de la voix de synthèse (affiché en pied de page)
+audio_credit:
+  texte: "Version audio : voix de synthèse Piper « siwis » (corpus SIWIS, Université d'Édimbourg)"
+  licence: "CC BY 4.0"
+  url: "https://creativecommons.org/licenses/by/4.0/deed.fr"

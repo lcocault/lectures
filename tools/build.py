@@ -53,7 +53,7 @@ def render_paragraphs(body):
     out, n = [], 0
     for block in re.split(r"\n\s*\n", body.strip()):
         rendered = md(block)
-        if block.lstrip().startswith(("#", ">", "-", "*", "1.")) or not rendered.startswith("<p>"):
+        if not rendered.startswith("<p>"):  # titres, listes, citations, HTML brut : pas d'id
             out.append(rendered)
             continue
         n += 1
@@ -64,6 +64,8 @@ def render_paragraphs(body):
 def page(cfg, title, body, depth, extra_head=""):
     up = "../" * depth
     lic = cfg["content_license"]
+    ac = cfg.get("audio_credit")
+    credit = f' <br>{esc(ac["texte"])} (<a href="{esc(ac["url"])}">{esc(ac["licence"])}</a>).' if ac else ""
     return f"""<!doctype html>
 <html lang="{esc(cfg['lang'])}">
 <head>
@@ -79,7 +81,7 @@ def page(cfg, title, body, depth, extra_head=""):
 {body}
 </main>
 <footer class="site-footer">Contenu éditorial (chapitrage, notes) sous
-<a href="{esc(lic['url'])}">{esc(lic['name'])}</a>.</footer>
+<a href="{esc(lic['url'])}">{esc(lic['name'])}</a>.{credit}</footer>
 <script src="{up}assets/app.js" defer></script>
 </body>
 </html>

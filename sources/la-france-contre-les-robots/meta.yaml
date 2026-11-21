@@ -1,0 +1,18 @@
+titre: La France contre les robots
+auteur: Georges Bernanos
+publication: Robert Laffont, 1947 (première édition : Comité de la France Libre du Brésil, 1945-1946)
+langue: fr
+licence: Domaine public (auteur mort en 1948)
+origine:
+  titre: Wikisource — texte validé, page « Texte entier »
+  url: https://fr.wikisource.org/wiki/La_France_contre_les_robots/Texte_entier
+  recupere_le: 2026-11-21
+contexte:
+  titre: Wikipédia — La France contre les robots (révision 239915377)
+  url: https://fr.wikipedia.org/wiki/La_France_contre_les_robots
+fichiers:
+  entier.json: réponse brute de l'API Wikisource (HTML rendu)
+  parse.json: page d'accueil / sommaire
+  wp.json: extrait Wikipédia
+  index.wiki: wikitexte de la page d'index
+conversion: python3 tools/import_wikisource.py entier.json <dossier>

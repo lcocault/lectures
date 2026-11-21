@@ -23,11 +23,12 @@ Site statique (hébergé chez AlwaysData, sans base de données) de textes fran�
 ## Traitement d'un nouveau texte
 
 1. Lire `sources/<slug>/` ; **vérifier la licence/domaine public** et la noter dans `book.yaml`.
-2. Nettoyer (en-têtes/pieds de page Gutenberg/Wikisource, numéros de page) sans modifier le texte de l'auteur.
-3. Chapitrer dans `content/<slug>/chapitres/NN-titre.md` avec front matter `titre:`. Un paragraphe = un bloc séparé par une ligne vide ; le build lui donne l'id `p1`, `p2`… Ne pas réordonner/fusionner les paragraphes après avoir créé des notes (les ancrages casseraient).
-4. Créer les notes dans `content/<slug>/notes/<id>.md` (voir format ci-dessous).
-5. Générer l'audio dans `audio/<slug>/`, puis mettre `audio: true` dans `book.yaml` et renseigner `audio_base_url` dans `config.yaml` quand le bucket est prêt.
-6. Builder et vérifier le rendu.
+2. Pour un texte Wikisource : `curl` de l'API `action=parse&page=<Titre>/Texte_entier&prop=text`, puis `python3 tools/import_wikisource.py entier.json <dossier>` (aplati les retours à la ligne, retire les numéros de page, garde les italiques). Garder les réponses brutes dans `sources/<slug>/` et les extraits Wikipédia de contexte dans `sources/<slug>/contexte/`.
+3. Nettoyer (en-têtes/pieds de page Gutenberg/Wikisource, numéros de page) sans modifier le texte de l'auteur.
+4. Chapitrer dans `content/<slug>/chapitres/NN-titre.md` avec front matter `titre:`. Un paragraphe = un bloc séparé par une ligne vide ; le build lui donne l'id `p1`, `p2`… Ne pas réordonner/fusionner les paragraphes après avoir créé des notes (les ancrages casseraient).
+5. Créer les notes dans `content/<slug>/notes/<id>.md` (voir format ci-dessous).
+6. Générer l'audio : `.venv-tts/bin/python tools/tts_generate.py <slug>` (Piper, voix `fr_FR-siwis-medium` ; modèles dans `models/`, environnement séparé `.venv-tts`, préparation du texte dans `tools/tts_text.py`). Résultat dans `audio/<slug>/`, puis mettre `audio: true` dans `book.yaml` et renseigner `audio_base_url` dans `config.yaml` quand le bucket est prêt.
+7. Builder et vérifier le rendu.
 
 ## Formats
 
@@ -53,4 +54,4 @@ Les notes contextualisent par rapport au passage ; elles ne recopient pas la sou
 - Notes issues de sources externes : synthèse reformulée, source citée avec sa licence ; privilégier les sources libres (Wikipédia, Wikisource, Gallica pour le domaine public). Contenu éditorial publié sous CC BY-SA 4.0 (cf. `config.yaml`).
 - Pour une note qui reprend des faits peu établis, le dire ; ne pas inventer de références.
 - Le site doit rester lisible sans JavaScript.
-- Audio : voix locale gratuite (choix à valider par un essai comparatif sur un extrait) ; vérifier la licence de la voix avant redistribution. Préparer le texte pour la voix (chiffres romains, abréviations, ponctuation).
+- Audio : voix Piper `fr_FR-siwis-medium` (CC BY 4.0, crédit dans le pied de page via `audio_credit`). Éviter la voix `tom` (AGPLv3). Si le texte change, régénérer les chapitres concernés (`--force`).

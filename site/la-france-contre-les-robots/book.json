@@ -1,0 +1,297 @@
+{
+ "slug": "la-france-contre-les-robots",
+ "titre": "La France contre les robots",
+ "auteur": "Georges Bernanos",
+ "chapitres": [
+  {
+   "id": "01-note-de-l-editeur",
+   "titre": "Note de l’éditeur et dédicace",
+   "audio": true
+  },
+  {
+   "id": "02-preface",
+   "titre": "Préface",
+   "audio": true
+  },
+  {
+   "id": "03-chapitre-1",
+   "titre": "Chapitre I",
+   "audio": true
+  },
+  {
+   "id": "04-chapitre-2",
+   "titre": "Chapitre II",
+   "audio": true
+  },
+  {
+   "id": "05-chapitre-3",
+   "titre": "Chapitre III",
+   "audio": true
+  },
+  {
+   "id": "06-chapitre-4",
+   "titre": "Chapitre IV",
+   "audio": true
+  },
+  {
+   "id": "07-chapitre-5",
+   "titre": "Chapitre V",
+   "audio": true
+  },
+  {
+   "id": "08-chapitre-6",
+   "titre": "Chapitre VI",
+   "audio": true
+  },
+  {
+   "id": "09-chapitre-7",
+   "titre": "Chapitre VII",
+   "audio": true
+  },
+  {
+   "id": "10-chapitre-8",
+   "titre": "Chapitre VIII",
+   "audio": true
+  }
+ ],
+ "notes": [
+  {
+   "id": "accords-de-munich",
+   "titre": "Les accords de Munich (1938)",
+   "type": "histoire",
+   "chapitre": "02-preface",
+   "ancrage": "p1"
+  },
+  {
+   "id": "balaam",
+   "titre": "Balaam et son ânesse",
+   "type": "culture",
+   "chapitre": "08-chapitre-6",
+   "ancrage": "p9"
+  },
+  {
+   "id": "bernanos-bresil",
+   "titre": "Bernanos au Brésil (1938-1945)",
+   "type": "personnage",
+   "chapitre": "02-preface",
+   "ancrage": "p1"
+  },
+  {
+   "id": "cavell-reims",
+   "titre": "Edith Cavell et le bombardement de Reims",
+   "type": "histoire",
+   "chapitre": "08-chapitre-6",
+   "ancrage": "p12"
+  },
+  {
+   "id": "charles-peguy",
+   "titre": "Charles Péguy",
+   "type": "personnage",
+   "chapitre": "02-preface",
+   "ancrage": "p2"
+  },
+  {
+   "id": "de-gaulle-petain",
+   "titre": "De Gaulle et Pétain",
+   "type": "personnage",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p2"
+  },
+  {
+   "id": "declaration-droits",
+   "titre": "La Déclaration des droits de l'homme et du citoyen",
+   "type": "histoire",
+   "chapitre": "06-chapitre-4",
+   "ancrage": "p1"
+  },
+  {
+   "id": "dictatures-iberiques-non-intervention",
+   "titre": "Salazar, Franco, Éthiopie, non-intervention",
+   "type": "histoire",
+   "chapitre": "03-chapitre-1",
+   "ancrage": "p5"
+  },
+  {
+   "id": "divinitatis-consortes",
+   "titre": "« Divinitatis consortes »",
+   "type": "vocabulaire",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p7"
+  },
+  {
+   "id": "eparges",
+   "titre": "Les Éparges (1915)",
+   "type": "histoire",
+   "chapitre": "07-chapitre-5",
+   "ancrage": "p4"
+  },
+  {
+   "id": "federation-quatre-aout",
+   "titre": "La Fédération et la nuit du Quatre Août",
+   "type": "histoire",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p2"
+  },
+  {
+   "id": "front-populaire",
+   "titre": "Le Front populaire (1936)",
+   "type": "histoire",
+   "chapitre": "07-chapitre-5",
+   "ancrage": "p4"
+  },
+  {
+   "id": "grands-cimetieres",
+   "titre": "Les Grands Cimetières sous la lune",
+   "type": "litterature",
+   "chapitre": "10-chapitre-8",
+   "ancrage": "p2"
+  },
+  {
+   "id": "guerre-totale",
+   "titre": "La guerre totale",
+   "type": "histoire",
+   "chapitre": "08-chapitre-6",
+   "ancrage": "p13"
+  },
+  {
+   "id": "guizot",
+   "titre": "Guizot et « Enrichissez-vous »",
+   "type": "histoire",
+   "chapitre": "09-chapitre-7",
+   "ancrage": "p7"
+  },
+  {
+   "id": "jeanne-hachette",
+   "titre": "Jeanne Hachette",
+   "type": "histoire",
+   "chapitre": "07-chapitre-5",
+   "ancrage": "p2"
+  },
+  {
+   "id": "la-brige",
+   "titre": "La Brige, personnage de Courteline",
+   "type": "litterature",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p9"
+  },
+  {
+   "id": "ligne-maginot",
+   "titre": "La ligne Maginot",
+   "type": "histoire",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p5"
+  },
+  {
+   "id": "luddisme-machinisme",
+   "titre": "Les briseurs de machines, le machinisme et la technocritique",
+   "type": "philosophie",
+   "chapitre": "08-chapitre-6",
+   "ancrage": "p7"
+  },
+  {
+   "id": "manchester",
+   "titre": "Manchester, ville du coton et du libéralisme",
+   "type": "geographie",
+   "chapitre": "03-chapitre-1",
+   "ancrage": "p4"
+  },
+  {
+   "id": "maurras",
+   "titre": "Charles Maurras",
+   "type": "personnage",
+   "chapitre": "09-chapitre-7",
+   "ancrage": "p8"
+  },
+  {
+   "id": "michelet-chambord",
+   "titre": "Michelet et le comte de Chambord",
+   "type": "personnage",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p2"
+  },
+  {
+   "id": "moloch",
+   "titre": "Moloch",
+   "type": "vocabulaire",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p9"
+  },
+  {
+   "id": "non-serviam",
+   "titre": "Non serviam",
+   "type": "philosophie",
+   "chapitre": "06-chapitre-4",
+   "ancrage": "p5"
+  },
+  {
+   "id": "parlements-ancien-regime",
+   "titre": "Les parlements de l'Ancien Régime",
+   "type": "histoire",
+   "chapitre": "05-chapitre-3",
+   "ancrage": "p4"
+  },
+  {
+   "id": "perinde-ac-cadaver",
+   "titre": "Perinde ac cadaver",
+   "type": "philosophie",
+   "chapitre": "07-chapitre-5",
+   "ancrage": "p5"
+  },
+  {
+   "id": "pitt-cobourg",
+   "titre": "Pitt et Cobourg : la coalition contre la France",
+   "type": "histoire",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p2"
+  },
+  {
+   "id": "progres-ancien-regime",
+   "titre": "Inventions et réformes de la fin de l'Ancien Régime",
+   "type": "histoire",
+   "chapitre": "06-chapitre-4",
+   "ancrage": "p4"
+  },
+  {
+   "id": "regime-de-vichy",
+   "titre": "Le régime de Vichy",
+   "type": "histoire",
+   "chapitre": "02-preface",
+   "ancrage": "p3"
+  },
+  {
+   "id": "san-francisco-1945",
+   "titre": "La Conférence de San Francisco (1945)",
+   "type": "histoire",
+   "chapitre": "10-chapitre-8",
+   "ancrage": "p10"
+  },
+  {
+   "id": "totalitarisme",
+   "titre": "Le totalitarisme",
+   "type": "philosophie",
+   "chapitre": "07-chapitre-5",
+   "ancrage": "p2"
+  },
+  {
+   "id": "usus-abusus",
+   "titre": "Jus utendi et abutendi",
+   "type": "philosophie",
+   "chapitre": "06-chapitre-4",
+   "ancrage": "p5"
+  },
+  {
+   "id": "valmy",
+   "titre": "Valmy (20 septembre 1792)",
+   "type": "histoire",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p4"
+  },
+  {
+   "id": "verdun",
+   "titre": "La bataille de Verdun (1916)",
+   "type": "histoire",
+   "chapitre": "04-chapitre-2",
+   "ancrage": "p1"
+  }
+ ]
+}
