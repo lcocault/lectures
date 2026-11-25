@@ -11,6 +11,17 @@
     });
   }
 
+  // Enchaîne vers le chapitre suivant à la fin de l'audio
+  var chapterAudio = document.querySelector('.chapter audio');
+  var nextChapter = document.querySelector('a[rel="next"]');
+  if (chapterAudio && nextChapter) {
+    chapterAudio.addEventListener('ended', function () {
+      window.setTimeout(function () {
+        if (chapterAudio.ended) window.location.href = nextChapter.href;
+      }, 2000);
+    });
+  }
+
   // Notes : un clic sur [note] ouvre la note dans une boîte de dialogue
   var refs = document.querySelectorAll('a.note-ref');
   if (!refs.length || typeof HTMLDialogElement === 'undefined') return;
